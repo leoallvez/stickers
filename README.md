@@ -105,7 +105,7 @@ Sticker apps communicate with WhatsApp as follows:
 * Your app should send an intent to launch WhatsApp's activity. The intent contains three pieces of information: the `ContentProvider` authority, the pack identifier of the pack that user wants to add, and the sticker pack name. Once the user confirms that they want to add that sticker pack to WhatsApp, WhatsApp will remember the pair of authority and identifier and will load the pack's stickers in the WhatsApp sticker picker/tray.
 
 ### ContentProvider
-The ContentProvider in the sample app is [StickerContentProvider](app/src/main/java/com/example/samplestickerapp/StickerContentProvider.java). The ContentProvider provides 4 APIs:
+The ContentProvider in the sample app is [StickerContentProvider](app/src/main/java/com/example/stickers/StickerContentProvider.java). The ContentProvider provides 4 APIs:
 
 1. `<authority>/metadata`, this returns information about all the sticker packs in your app. Replace `<authority>` with the actual authority string. In the sample app, it is `com.example.samplestickerapp.stickercontentprovider`
 2. `<authority>/metadata/<pack_identifier>`, this returns information about a single pack. Replace `<pack_identifier>` with the actual identifier of the pack. In the sample app, it is `1`.
@@ -142,7 +142,7 @@ If you would like to expose files saved internally or externally and serve these
 
 ### Intent
 It is required that users explicitly add a sticker pack to WhatsApp, so your app must provide a UI element to allow users to add a pack (for example, a button labeled "Add to WhatsApp" as in the sample app). 
-In the sample app, both [StickerPackListActivity](app/src/main/java/com/example/samplestickerapp/StickerPackListActivity.java) and [StickerPackDetailsActivity](app/src/main/java/com/example/samplestickerapp/StickerPackDetailsActivity.java) contains code to launch the intent after the user presses the Add to WhatsApp button. The user must then confirm they want to add the pack via the alert box presented by WhatsApp.
+In the sample app, both [StickerPackListActivity](app/src/main/java/com/example/stickers/StickerPackListActivity.java) and [StickerPackDetailsActivity](app/src/main/java/com/example/stickers/StickerPackDetailsActivity.java) contains code to launch the intent after the user presses the Add to WhatsApp button. The user must then confirm they want to add the pack via the alert box presented by WhatsApp.
 
         Intent intent = new Intent();
         intent.setAction("com.whatsapp.intent.action.ENABLE_STICKER_PACK");
@@ -163,9 +163,9 @@ A `ContentProvider` provides information to sticker apps on whether an app is ad
 In order to query this ContentProvider, you need to provide the following query:
 `content://com.whatsapp.provider.sticker_whitelist_check/is_whitelisted?authority='replace with authority of your sticker content provider'&identifier='replace with identifier of the pack'`
 
-The result is in a row corresponding to the column named `result`. The value will be either `0`, meaning the pack is not added to WhatsApp, or `1`, meaning the pack has been added. If the returned result is null, the query was invalid or the version of WhatsApp installed by the user is too old to support stickers. See the class in the sample app: [WhitelistCheck](app/src/main/java/com/example/samplestickerapp/WhitelistCheck.java). This class provides ways to do the query. You can call `WhitelistCheck.isWhitelisted(Context context, String identifier)`. The identifier should match the identifier of the pack you want to query. The authority is automatically filled in as the authority of your sticker app's ContentProvider.
+The result is in a row corresponding to the column named `result`. The value will be either `0`, meaning the pack is not added to WhatsApp, or `1`, meaning the pack has been added. If the returned result is null, the query was invalid or the version of WhatsApp installed by the user is too old to support stickers. See the class in the sample app: [WhitelistCheck](app/src/main/java/com/example/stickers/WhitelistCheck.java). This class provides ways to do the query. You can call `WhitelistCheck.isWhitelisted(Context context, String identifier)`. The identifier should match the identifier of the pack you want to query. The authority is automatically filled in as the authority of your sticker app's ContentProvider.
 
-Note that a pack can be added to either the main WhatsApp app, WhatsApp Business, or both. It is recommended you continue to present a button to add the pack to WhatsApp if the sticker pack is not added to one or more of the apps. Refer to the class [WhitelistCheck](app/src/main/java/com/example/samplestickerapp/WhitelistCheck.java) for sample logic.
+Note that a pack can be added to either the main WhatsApp app, WhatsApp Business, or both. It is recommended you continue to present a button to add the pack to WhatsApp if the sticker pack is not added to one or more of the apps. Refer to the class [WhitelistCheck](app/src/main/java/com/example/stickers/WhitelistCheck.java) for sample logic.
 
 Your app can only query whether the packs it provides have been added and it can't check for information about sticker packs from other apps.
 

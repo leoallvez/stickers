@@ -6,14 +6,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package com.example.samplestickerapp;
+package br.com.deepbyte.overview.stickers;
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
+
+import br.com.example.stickers.R;
 
 class StickerPackListItemViewHolder extends RecyclerView.ViewHolder {
 

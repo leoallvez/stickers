@@ -6,13 +6,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package com.example.samplestickerapp;
+package br.com.deepbyte.overview.stickers;
 
 import android.text.TextUtils;
 import android.util.JsonReader;
-
 import androidx.annotation.NonNull;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;

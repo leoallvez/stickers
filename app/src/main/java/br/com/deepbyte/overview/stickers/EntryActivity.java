@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package com.example.samplestickerapp;
+package br.com.deepbyte.overview.stickers;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,11 +16,11 @@ import android.util.Log;
 import android.util.Pair;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.annotation.Nullable;
-
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+
+import br.com.example.stickers.R;
 
 public class EntryActivity extends BaseActivity {
     private View progressBar;

@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package com.example.samplestickerapp;
+package br.com.deepbyte.overview.stickers;
 
 import android.content.Intent;
 import android.graphics.Rect;
@@ -19,13 +19,13 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.annotation.DrawableRes;
 import androidx.annotation.IdRes;
 import androidx.core.view.ViewCompat;
-
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+
+import br.com.example.stickers.R;
 
 public class StickerPackInfoActivity extends BaseActivity {
 
