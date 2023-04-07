@@ -5,33 +5,30 @@ android {
     aaptOptions {
         noCompress "webp"
     }
-    compileSdkVersion 30
+    compileSdkVersion 33
     defaultConfig {
         applicationId "br.com.deepbyte.overview.stickers.lab"
         minSdkVersion 15
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
-        manifestPlaceholders =
-                [contentProviderAuthority: contentProviderAuthority]
+        manifestPlaceholders = [contentProviderAuthority: contentProviderAuthority]
         // Adds a new field for the authority to the BuildConfig class.
-        buildConfigField("String",
-                "CONTENT_PROVIDER_AUTHORITY",
-                "\"${contentProviderAuthority}\"")
+        buildConfigField("String", "CONTENT_PROVIDER_AUTHORITY", "\"${contentProviderAuthority}\"")
     }
     buildTypes {
         debug {
             minifyEnabled false
             shrinkResources false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
             minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
         }
     }
     compileOptions {
@@ -43,60 +40,7 @@ android {
         exclude 'lib/*/libnative-imagetranscoder.so'
         exclude 'lib/*/libnative-filters.so'
     }
-
-    // Configures multiple APKs based on ABI.
-    // see https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split
-//    splits {
-//        abi {
-//            enable true // Enables building multiple APKs per ABI.
-//            universalApk true // Specifies that we want to also generate a universal APK that includes all ABIs.
-//        }
-//    }
 }
-
-task checkDebug {
-    doLast {
-        println("checkDebug")
-        if (android.defaultConfig.applicationId.startsWith("com.whatsapp")) {
-            throw new GradleException("applicationId in defaultConfig cannot start with com.whatsapp, please change your applicationId in app/build.gradle")
-        }
-        checkApplicationIdInDebug()
-    }
-}
-
-private void checkApplicationIdInDebug() {
-    Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-    def ignoreApplicationIdCheck = properties.getProperty('ignoreApplicationIdCheck')
-    if (ignoreApplicationIdCheck == null) {
-        if (android.defaultConfig.applicationId == "com.example.samplestickerapp") {
-            throw new GradleException("Your applicationId is currently com.example.samplestickerapp, please change your applicationId to a different string in app/build.gradle in line 10")
-        }
-    } else {
-        println("application id check ignored")
-    }
-}
-
-
-task checkRelease {
-    doLast {
-        println("checkRelease")
-        if (android.defaultConfig.applicationId.startsWith("com.example")) {
-            throw new GradleException("applicationId in defaultConfig cannot start with com.example, please change your applicationId in app/build.gradle")
-        }
-    }
-}
-
-tasks.whenTaskAdded { task ->
-    println(task.name)
-    if (task.name.contains("assembleDebug")) {
-        task.dependsOn checkDebug
-    }
-    if (task.name.contains("assembleRelease")) {
-        task.dependsOn checkRelease
-    }
-}
-
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
