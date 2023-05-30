@@ -21,8 +21,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import br.com.example.stickers.BuildConfig;
-import br.com.example.stickers.R;
+import br.com.deepbyte.overview.stickerstrends.BuildConfig;
+import br.com.deepbyte.overview.stickerstrends.R;
 
 public abstract class AddStickerPackActivity extends BaseActivity {
     private static final int ADD_PACK = 200;

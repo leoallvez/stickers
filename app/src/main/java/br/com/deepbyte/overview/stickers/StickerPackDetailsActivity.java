@@ -25,7 +25,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.lang.ref.WeakReference;
 
-import br.com.example.stickers.R;
+import br.com.deepbyte.overview.stickerstrends.R;
 
 public class StickerPackDetailsActivity extends AddStickerPackActivity {
 

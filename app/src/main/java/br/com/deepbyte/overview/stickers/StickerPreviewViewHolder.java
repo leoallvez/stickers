@@ -11,7 +11,7 @@ import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.drawee.view.SimpleDraweeView;
 
-import br.com.example.stickers.R;
+import br.com.deepbyte.overview.stickerstrends.R;
 
 class StickerPreviewViewHolder extends RecyclerView.ViewHolder {
 

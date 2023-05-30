@@ -25,7 +25,7 @@ import androidx.core.view.ViewCompat;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-import br.com.example.stickers.R;
+import br.com.deepbyte.overview.stickerstrends.R;
 
 public class StickerPackInfoActivity extends BaseActivity {
 

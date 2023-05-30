@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-import br.com.example.stickers.BuildConfig;
+import br.com.deepbyte.overview.stickerstrends.BuildConfig;
 
 class StickerPackLoader {
 

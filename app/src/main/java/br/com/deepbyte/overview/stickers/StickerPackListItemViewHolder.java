@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import br.com.example.stickers.R;
+import br.com.deepbyte.overview.stickerstrends.R;
 
 class StickerPackListItemViewHolder extends RecyclerView.ViewHolder {
 

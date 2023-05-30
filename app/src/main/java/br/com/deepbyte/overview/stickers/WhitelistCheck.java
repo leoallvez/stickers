@@ -17,7 +17,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import androidx.annotation.NonNull;
 
-import br.com.example.stickers.BuildConfig;
+import br.com.deepbyte.overview.stickerstrends.BuildConfig;
 
 class WhitelistCheck {
     private static final String AUTHORITY_QUERY_PARAM = "authority";
