@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "231993177854",
-    "project_id": "cats-tickers-prod",
-    "storage_bucket": "cats-tickers-prod.appspot.com"
+    "project_number": "1027232911756",
+    "project_id": "cat-stickers-prod",
+    "storage_bucket": "cat-stickers-prod.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:231993177854:android:cab3b3c3a7947ad10f17af",
+        "mobilesdk_app_id": "1:1027232911756:android:4c963bcb56e66b5fac46a9",
         "android_client_info": {
           "package_name": "br.com.deepbyte.overview.catstickers"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAxS1-cw98y7f6gG9jnn_L1HnG1R65D5R4"
+          "current_key": "AIzaSyCsLTZu7cyhlNR4uRFq78yYchMy99fc8TY"
         }
       ],
       "services": {
