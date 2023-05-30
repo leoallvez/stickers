@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "321802927648",
-    "project_id": "stickers-trends",
-    "storage_bucket": "stickers-trends.appspot.com"
+    "project_number": "231993177854",
+    "project_id": "cats-tickers-prod",
+    "storage_bucket": "cats-tickers-prod.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:321802927648:android:b15028d5a66ebd600b0645",
+        "mobilesdk_app_id": "1:231993177854:android:cab3b3c3a7947ad10f17af",
         "android_client_info": {
-          "package_name": "br.com.deepbyte.overview.stickerstrends"
+          "package_name": "br.com.deepbyte.overview.catstickers"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "321802927648-c3hd3cghq3op6k9m6eg25to3eokjc9mi.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC6hNaT9F95yP9LsYyeSrHMqZy_nUUHscg"
+          "current_key": "AIzaSyAxS1-cw98y7f6gG9jnn_L1HnG1R65D5R4"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "321802927648-c3hd3cghq3op6k9m6eg25to3eokjc9mi.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

@@ -29,8 +29,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-import br.com.deepbyte.overview.stickerstrends.BuildConfig;
-
 public class StickerContentProvider extends ContentProvider {
 
     /**

@@ -24,8 +24,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.List;
 
-import br.com.deepbyte.overview.stickerstrends.R;
-
 public class StickerPackListAdapter extends RecyclerView.Adapter<StickerPackListItemViewHolder> {
     @NonNull
     private List<StickerPack> stickerPacks;
