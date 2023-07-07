@@ -90,6 +90,90 @@
             "😄",
             "😀"
           ]
+        },
+        {
+          "image_file": "emplogado.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "morrendo_de_rir.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "neve.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "loading.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "in_love.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "bolado.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "nem_ai.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "inacreditavel.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "rindo.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "dog_bolado.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "bolado_transp.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "largado.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
         }
       ]
     },
@@ -106,7 +190,7 @@
       "license_agreement_website": "",
       "stickers": [
         {
-          "image_file": "largado.webp",
+          "image_file": "bolado_transp.webp",
           "emojis": [
             "😄",
             "😀"
