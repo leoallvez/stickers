@@ -20,35 +20,83 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public abstract class AddStickerPackActivity extends BaseActivity {
     private static final int ADD_PACK = 200;
     private static final String TAG = "AddStickerPackActivity";
 
     protected void addStickerPackToWhatsApp(String identifier, String stickerPackName) {
-        try {
-            //if neither WhatsApp Consumer or WhatsApp Business is installed, then tell user to install the apps.
-            if (!WhitelistCheck.isWhatsAppConsumerAppInstalled(getPackageManager()) && !WhitelistCheck.isWhatsAppSmbAppInstalled(getPackageManager())) {
+        createAd(() -> {
+            try {
+                //if neither WhatsApp Consumer or WhatsApp Business is installed, then tell user to install the apps.
+                if (!WhitelistCheck.isWhatsAppConsumerAppInstalled(getPackageManager()) && !WhitelistCheck.isWhatsAppSmbAppInstalled(getPackageManager())) {
+                    Toast.makeText(this, R.string.add_pack_fail_prompt_update_whatsapp, Toast.LENGTH_LONG).show();
+                    return;
+                }
+                final boolean stickerPackWhitelistedInWhatsAppConsumer = WhitelistCheck.isStickerPackWhitelistedInWhatsAppConsumer(this, identifier);
+                final boolean stickerPackWhitelistedInWhatsAppSmb = WhitelistCheck.isStickerPackWhitelistedInWhatsAppSmb(this, identifier);
+                if (!stickerPackWhitelistedInWhatsAppConsumer && !stickerPackWhitelistedInWhatsAppSmb) {
+                    //ask users which app to add the pack to.
+                    launchIntentToAddPackToChooser(identifier, stickerPackName);
+                } else if (!stickerPackWhitelistedInWhatsAppConsumer) {
+                    launchIntentToAddPackToSpecificPackage(identifier, stickerPackName, WhitelistCheck.CONSUMER_WHATSAPP_PACKAGE_NAME);
+                } else if (!stickerPackWhitelistedInWhatsAppSmb) {
+                    launchIntentToAddPackToSpecificPackage(identifier, stickerPackName, WhitelistCheck.SMB_WHATSAPP_PACKAGE_NAME);
+                } else {
+                    Toast.makeText(this, R.string.add_pack_fail_prompt_update_whatsapp, Toast.LENGTH_LONG).show();
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "error adding sticker pack to WhatsApp", e);
                 Toast.makeText(this, R.string.add_pack_fail_prompt_update_whatsapp, Toast.LENGTH_LONG).show();
-                return;
             }
-            final boolean stickerPackWhitelistedInWhatsAppConsumer = WhitelistCheck.isStickerPackWhitelistedInWhatsAppConsumer(this, identifier);
-            final boolean stickerPackWhitelistedInWhatsAppSmb = WhitelistCheck.isStickerPackWhitelistedInWhatsAppSmb(this, identifier);
-            if (!stickerPackWhitelistedInWhatsAppConsumer && !stickerPackWhitelistedInWhatsAppSmb) {
-                //ask users which app to add the pack to.
-                launchIntentToAddPackToChooser(identifier, stickerPackName);
-            } else if (!stickerPackWhitelistedInWhatsAppConsumer) {
-                launchIntentToAddPackToSpecificPackage(identifier, stickerPackName, WhitelistCheck.CONSUMER_WHATSAPP_PACKAGE_NAME);
-            } else if (!stickerPackWhitelistedInWhatsAppSmb) {
-                launchIntentToAddPackToSpecificPackage(identifier, stickerPackName, WhitelistCheck.SMB_WHATSAPP_PACKAGE_NAME);
-            } else {
-                Toast.makeText(this, R.string.add_pack_fail_prompt_update_whatsapp, Toast.LENGTH_LONG).show();
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "error adding sticker pack to WhatsApp", e);
-            Toast.makeText(this, R.string.add_pack_fail_prompt_update_whatsapp, Toast.LENGTH_LONG).show();
-        }
+        });
+    }
 
+    private void createAd(Callback callback) {
+
+        MobileAds.initialize(this, initializationStatus -> {});
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(
+            this,
+            "ca-app-pub-3940256099942544/1033173712",
+            adRequest,
+            loadInterstitialAdLoadCallback(callback)
+        );
+    }
+
+    private InterstitialAdLoadCallback loadInterstitialAdLoadCallback(Callback callback) {
+        return new InterstitialAdLoadCallback() {
+            @Override
+            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                // The mInterstitialAd reference will be null until
+                // an ad is loaded.
+                interstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+                    @Override
+                    public void onAdDismissedFullScreenContent() {
+                        // Called when ad is dismissed.
+                        // Set the ad reference to null so you don't show the ad a second time.
+                        callback.call();
+                        Log.d(TAG, "Ad dismissed fullscreen content.");
+                    }
+                });
+                interstitialAd.show(AddStickerPackActivity.this);
+                Log.i(TAG, "onAdLoaded");
+            }
+
+            @Override
+            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                // Handle the error
+                callback.call();
+                Log.d(TAG, loadAdError.toString());
+            }
+        };
     }
 
     private void launchIntentToAddPackToSpecificPackage(String identifier, String stickerPackName, String whatsappPackageName) {
