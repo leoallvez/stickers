@@ -8,8 +8,8 @@ android {
     }
     compileSdkVersion 33
     defaultConfig {
-        applicationId "br.com.deepbyte.overview.catstickers"
-        namespace 'br.com.deepbyte.overview.stickers'
+        applicationId "br.dev.singular.catstickers"
+        namespace 'br.dev.singular.stickers'
         minSdkVersion 19
         targetSdkVersion 33
         multiDexEnabled true

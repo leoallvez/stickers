@@ -86,7 +86,7 @@
         android:layout_height="450dp"
         android:layout_weight="1">
 
-        <br.com.deepbyte.overview.stickers.BottomFadingRecyclerView
+        <br.dev.singular.stickers.BottomFadingRecyclerView
             android:id="@+id/sticker_list"
             android:layout_width="match_parent"
             android:layout_height="400dp"
@@ -186,7 +186,5 @@
                 android:gravity="center"
                 android:text="@string/sticker_pack_details_tap_to_preview" />
         </LinearLayout>
-
-
     </FrameLayout>
 </LinearLayout>

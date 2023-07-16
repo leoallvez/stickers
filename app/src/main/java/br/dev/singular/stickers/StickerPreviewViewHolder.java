@@ -6,7 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package br.com.deepbyte.overview.stickers;
+package br.dev.singular.stickers;
+
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.drawee.view.SimpleDraweeView;

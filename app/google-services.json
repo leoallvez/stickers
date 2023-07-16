@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "1027232911756",
-    "project_id": "cat-stickers-prod",
-    "storage_bucket": "cat-stickers-prod.appspot.com"
+    "project_number": "711013213995",
+    "project_id": "figurinhas-gatos",
+    "storage_bucket": "figurinhas-gatos.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1027232911756:android:4c963bcb56e66b5fac46a9",
+        "mobilesdk_app_id": "1:711013213995:android:880fd17e52745a4b46076e",
         "android_client_info": {
-          "package_name": "br.com.deepbyte.overview.catstickers"
+          "package_name": "br.dev.singular.catstickers"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "711013213995-n8d6kf7e7ckd5m76f6nsqrp5qn6u9l2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyCsLTZu7cyhlNR4uRFq78yYchMy99fc8TY"
+          "current_key": "AIzaSyCtYVMliHP9Ga1yU4OxBxe5cqkxux7KvTc"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711013213995-n8d6kf7e7ckd5m76f6nsqrp5qn6u9l2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

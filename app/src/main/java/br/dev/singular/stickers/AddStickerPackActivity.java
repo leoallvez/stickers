@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package br.com.deepbyte.overview.stickers;
+package br.dev.singular.stickers;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -64,10 +64,10 @@ public abstract class AddStickerPackActivity extends BaseActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
 
         InterstitialAd.load(
-            this,
-            "ca-app-pub-3940256099942544/1033173712",
-            adRequest,
-            loadInterstitialAdLoadCallback(callback)
+                this,
+                "ca-app-pub-3940256099942544/1033173712",
+                adRequest,
+                loadInterstitialAdLoadCallback(callback)
         );
     }
 

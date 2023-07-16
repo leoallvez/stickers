@@ -1,4 +1,4 @@
-package br.com.deepbyte.overview.stickers;
+package br.dev.singular.stickers;
 
 public interface Callback {
     void call();

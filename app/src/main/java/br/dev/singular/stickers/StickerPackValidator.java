@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package br.com.deepbyte.overview.stickers;
+package br.dev.singular.stickers;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,12 +15,9 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.webkit.URLUtil;
-
 import androidx.annotation.NonNull;
-
 import com.facebook.animated.webp.WebPImage;
 import com.facebook.imagepipeline.common.ImageDecodeOptions;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;

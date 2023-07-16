@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package br.com.deepbyte.overview.stickers;
+package br.dev.singular.stickers;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -25,8 +25,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
 import java.lang.ref.WeakReference;
+
 
 public class StickerPackDetailsActivity extends AddStickerPackActivity {
 
