@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="br.com.example.stickers">
+    package="br.dev.singular.stickers">
 
     <application
-        android:name="br.com.deepbyte.overview.stickers.StickerApplication"
+        android:name="br.dev.singular.stickers.StickerApplication"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
@@ -13,38 +13,44 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="br.com.deepbyte.overview.stickers.EntryActivity"
+        <activity android:name="br.dev.singular.stickers.EntryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.com.deepbyte.overview.stickers.StickerPackListActivity" />
+        <activity android:name="br.dev.singular.stickers.StickerPackListActivity" />
         <activity
-            android:name="br.com.deepbyte.overview.stickers.StickerPackDetailsActivity"
-            android:parentActivityName="br.com.deepbyte.overview.stickers.StickerPackListActivity"
+            android:name="br.dev.singular.stickers.StickerPackDetailsActivity"
+            android:parentActivityName="br.dev.singular.stickers.StickerPackListActivity"
             tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="br.com.deepbyte.overview.stickers.StickerPackListActivity" />
+                android:value="br.dev.singular.stickers.StickerPackListActivity" />
         </activity>
         <activity
-            android:name="br.com.deepbyte.overview.stickers.StickerPackInfoActivity"
+            android:name="br.dev.singular.stickers.StickerPackInfoActivity"
             android:label="@string/title_activity_sticker_pack_info"
-            android:parentActivityName="br.com.deepbyte.overview.stickers.StickerPackDetailsActivity"
+            android:parentActivityName="br.dev.singular.stickers.StickerPackDetailsActivity"
             tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="br.com.deepbyte.overview.stickers.StickerPackDetailsActivity" />
+                android:value="br.dev.singular.stickers.StickerPackDetailsActivity" />
         </activity>
 
         <provider
-            android:name="br.com.deepbyte.overview.stickers.StickerContentProvider"
+            android:name="br.dev.singular.stickers.StickerContentProvider"
             android:authorities="${contentProviderAuthority}"
             android:enabled="true"
             android:exported="true"
             android:readPermission="com.whatsapp.sticker.READ" />
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2674167083358956~4290582612"/>
+
     </application>
 
     <!-- to be able to query the whitelist status in WhatsApp 

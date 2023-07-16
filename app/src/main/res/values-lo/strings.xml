@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">WhatsAppSampleStickerApp</string>
+	<string name="app_name">Cat Stickers for WhatsApp</string>
 	<!-- Content description for the sticker pack tray image -->
 	<string name="tray_image_content_description">ຮູບຊຸດສະຕິກເກີ້ຢູ່ແຖບ</string>
 	<!-- the title of info button in the menu that takes the user to more information about that pack showing publisher website and so on -->

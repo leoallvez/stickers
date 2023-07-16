@@ -6,7 +6,7 @@
     android:background="@color/infoPageBackgroundColor"
     android:orientation="vertical"
     android:paddingTop="8dp"
-    tools:context="com.deepbyte.overview.stickers.StickerPackInfoActivity">
+    tools:context="br.dev.singular.stickers.StickerPackInfoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

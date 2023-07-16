@@ -4,9 +4,9 @@
   "sticker_packs": [
     {
       "identifier": "1",
-      "name": "Cuppy",
-      "publisher": "Jane Doe",
-      "tray_image_file": "tray_Cuppy.png",
+      "name": "Package 1",
+      "publisher": "Singular Apps",
+      "tray_image_file": "rindo-min.png",
       "image_data_version": "1",
       "avoid_cache": false,
       "publisher_email": "",
@@ -15,361 +15,318 @@
       "license_agreement_website": "",
       "stickers": [
         {
-          "image_file": "01_Cuppy_smile.webp",
-          "emojis": [
-            "☕",
-            "🙂"
-          ]
-        },
-        {
-          "image_file": "02_Cuppy_lol.webp",
+          "image_file": "rindo.webp",
           "emojis": [
             "😄",
             "😀"
           ]
         },
         {
-          "image_file": "03_Cuppy_rofl.webp",
+          "image_file": "meigo.webp",
           "emojis": [
-            "😆",
-            "😂"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "04_Cuppy_sad.webp",
+          "image_file": "morrendo_de_rir.webp",
           "emojis": [
-            "😩",
-            "😰"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "05_Cuppy_cry.webp",
+          "image_file": "naruto.webp",
           "emojis": [
-            "😭",
-            "💧"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "06_Cuppy_love.webp",
+          "image_file": "neve.webp",
           "emojis": [
-            "😍",
-            "♥"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "07_Cuppy_hate.webp",
+          "image_file": "oculos.webp",
           "emojis": [
-            "💔",
-            "👎"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "08_Cuppy_lovewithmug.webp",
+          "image_file": "parça.webp",
           "emojis": [
-            "😍",
-            "💑"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "09_Cuppy_lovewithcookie.webp",
+          "image_file": "patetico.webp",
           "emojis": [
-            "😘",
-            "🍪"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "10_Cuppy_hmm.webp",
+          "image_file": "piscada.webp",
           "emojis": [
-            "🤔",
-            "😐"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "11_Cuppy_upset.webp",
+          "image_file": "pokemon.webp",
           "emojis": [
-            "😱",
-            "😵"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "12_Cuppy_angry.webp",
+          "image_file": "preso.webp",
           "emojis": [
-            "😡",
-            "😠"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "13_Cuppy_curious.webp",
+          "image_file": "refen.webp",
           "emojis": [
-            "❓",
-            "🤔"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "14_Cuppy_weird.webp",
+          "image_file": "risinho.webp",
           "emojis": [
-            "🌈",
-            "😜"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "15_Cuppy_bluescreen.webp",
+          "image_file": "sorriso.webp",
           "emojis": [
-            "💻",
-            "😩"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "16_Cuppy_angry.webp",
+          "image_file": "surpreso.webp",
           "emojis": [
-            "😡",
-            "😤"
-          ]
-        },
-        {
-          "image_file": "17_Cuppy_tired.webp",
-          "emojis": [
-            "😩",
-            "😨"
-          ]
-        },
-        {
-          "image_file": "18_Cuppy_workhard.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "19_Cuppy_shine.webp",
-          "emojis": [
-            "🎉",
-            "✨"
-          ]
-        },
-        {
-          "image_file": "20_Cuppy_disgusting.webp",
-          "emojis": [
-            "🤮",
-            "👎"
-          ]
-        },
-        {
-          "image_file": "21_Cuppy_hi.webp",
-          "emojis": [
-            "🖐",
-            "🙋"
-          ]
-        },
-        {
-          "image_file": "22_Cuppy_bye.webp",
-          "emojis": [
-            "🖐",
-            "👋"
-          ]
-        },
-        {
-          "image_file": "23_Cuppy_greentea.webp",
-          "emojis": [
-            "🍵",
-            "😌"
-          ]
-        },
-        {
-          "image_file": "24_Cuppy_phone.webp",
-          "emojis": [
-            "📱",
-            "😦"
-          ]
-        },
-        {
-          "image_file": "25_Cuppy_battery.webp",
-          "emojis": [
-            "🔋",
-            "😵"
+            "😄",
+            "😀"
           ]
         }
       ]
     },
     {
       "identifier": "2",
-      "name": "Together While Apart",
-      "publisher": "World Health Organization",
-      "tray_image_file": "01.png",
+      "name": "package 2",
+      "publisher": "Singular Apps",
+      "tray_image_file": "bolado-min.png",
       "image_data_version": "1",
       "avoid_cache": false,
       "publisher_email": "",
       "publisher_website": "",
       "privacy_policy_website": "",
       "license_agreement_website": "",
-      "animated_sticker_pack": true,
       "stickers": [
         {
-          "image_file": "01_SendingLove.webp",
+          "image_file": "bolado.webp",
           "emojis": [
-            "🥰",
-            "😘",
-            "❤️"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "02_WellDoThisTogether.webp",
+          "image_file": "bolado_transp.webp",
           "emojis": [
-            "✊",
-            "💪",
-            "🙏"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "03_Heart.webp",
+          "image_file": "dedo.webp",
           "emojis": [
-            "❤️",
-            "🥰",
-            "💕"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "04_AirHighFive.webp",
+          "image_file": "dog_bolado.webp",
           "emojis": [
-            "🖐",
-            "🙌",
-            "✋"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "05_GroupVideoCalling.webp",
+          "image_file": "duvida.webp",
           "emojis": [
-            "📱",
-            "👯",
-            "👋"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "06_StayConnected.webp",
+          "image_file": "emplogado.webp",
           "emojis": [
-            "📱",
-            "🙋‍♀",
-            "🙋‍♂"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "07_OK.webp",
+          "image_file": "engarrafado.webp",
           "emojis": [
-            "👍",
-            "👌",
-            "🙂"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "08_AreYouOK.webp",
+          "image_file": "estilo.webp",
           "emojis": [
-            "👋",
-            "❓",
-            "📱"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "09_StayingHomeMug.webp",
+          "image_file": "fofo1.webp",
           "emojis": [
-            "☕",
-            "🍵",
-            "🏠"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "10_WorkingFromBed.webp",
+          "image_file": "fofo2.webp",
           "emojis": [
-            "👩‍💻",
-            "👨‍💻",
-            "🛏"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "11_StayCalm.webp",
+          "image_file": "in_love.webp",
           "emojis": [
-            "🧘♀",
-            "🧘♂",
-            "🤙"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "12_Gymnastics.webp",
+          "image_file": "inacreditavel.webp",
           "emojis": [
-            "🤸",
-            "🐩",
-            "💪"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "13_DoubleChecking.webp",
+          "image_file": "keyboard.webp",
           "emojis": [
-            "📰",
-            "🔎",
-            "🔍"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "14_CatOnTheLaptop.webp",
+          "image_file": "largado.webp",
           "emojis": [
-            "🐈",
-            "🐱",
-            "💻"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "15_WorkingFromHomeF.webp",
+          "image_file": "loading.webp",
           "emojis": [
-            "👩‍💻",
-            "🏠",
-            "💻"
+            "😄",
+            "😀"
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "name": "package 3",
+      "publisher": "Singular Apps",
+      "tray_image_file": "cabeça-min.png",
+      "image_data_version": "1",
+      "avoid_cache": false,
+      "publisher_email": "",
+      "publisher_website": "",
+      "privacy_policy_website": "",
+      "license_agreement_website": "",
+      "stickers": [
+        {
+          "image_file": "cabeça.webp",
+          "emojis": [
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "16_WorkingFromHomeM.webp",
+          "image_file": "surpresa.webp",
           "emojis": [
-            "👨‍💻",
-            "🏠",
-            "💻"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "17_WashingHands.webp",
+          "image_file": "bugado.webp",
           "emojis": [
-            "✋",
-            "💦",
-            "🧼"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "18_DontTouchYourFace.webp",
+          "image_file": "bora_conversar.webp",
           "emojis": [
-            "😷",
-            "🤒",
-            "🤧"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "19_SocialDistancing.webp",
+          "image_file": "fofinho.webp",
           "emojis": [
-            "😷",
-            "🤒",
-            "🏠"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "20_SuperheroNurse.webp",
+          "image_file": "sono.webp",
           "emojis": [
-            "👩‍⚕",
-            "👨‍⚕️",
-            "🩺"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "21_YouAreMyHero.webp",
+          "image_file": "mecanico.webp",
           "emojis": [
-            "🙏",
-            "🦸‍♀️",
-            "🦸"
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "incredulo.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "ironico.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "bebado.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "joia.webp",
+          "emojis": [
+            "😄",
+            "😀"
           ]
         }
       ]

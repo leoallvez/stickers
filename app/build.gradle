@@ -8,7 +8,8 @@ android {
     }
     compileSdkVersion 33
     defaultConfig {
-        applicationId "br.com.deepbyte.overview.stickerstrends"
+        applicationId "br.dev.singular.catstickers"
+        namespace 'br.dev.singular.stickers'
         minSdkVersion 19
         targetSdkVersion 33
         multiDexEnabled true
@@ -47,11 +48,12 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.6.0'
     implementation platform('com.google.firebase:firebase-bom:31.5.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'androidx.recyclerview:recyclerview:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha07'
+    implementation 'com.google.android.gms:play-services-ads:22.1.0'
 
     def fresco_version = '2.5.0'
     implementation "com.facebook.fresco:fresco:$fresco_version"
