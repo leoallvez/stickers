@@ -117,7 +117,7 @@
             android:layout_height="100dp"
             android:padding="16dp"
             app:adSize="BANNER"
-            app:adUnitId="ca-app-pub-2674167083358956/5432914527"
+            app:adUnitId="@string/ad_banner_details"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sticker_list" />
 

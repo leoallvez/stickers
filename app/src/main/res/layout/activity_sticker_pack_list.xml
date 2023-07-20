@@ -36,7 +36,7 @@
         android:layout_height="100dp"
         android:padding="16dp"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-2674167083358956/7807209692"
+        app:adUnitId="@string/ad_banner_home"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

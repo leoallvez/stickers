@@ -65,7 +65,7 @@ public abstract class AddStickerPackActivity extends BaseActivity {
 
         InterstitialAd.load(
                 this,
-                "ca-app-pub-3940256099942544/1033173712",
+                getString(R.string.ad_download_sticker),
                 adRequest,
                 loadInterstitialAdLoadCallback(callback)
         );

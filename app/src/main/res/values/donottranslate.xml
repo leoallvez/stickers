@@ -3,4 +3,9 @@
     <string name="dot">•</string>
     <string name="error_message">Error: %s \nSee logcat for stack trace.</string>
     <string name="title_validation_error">Error with the pack</string>
+
+    <!-- App Ads -->
+    <string name="ad_banner_home">ca-app-pub-2674167083358956/6911729685</string>
+    <string name="ad_banner_details">ca-app-pub-2674167083358956/2972484678</string>
+    <string name="ad_download_sticker">ca-app-pub-2674167083358956/4752470201</string>
 </resources>

@@ -46,10 +46,9 @@
             android:exported="true"
             android:readPermission="com.whatsapp.sticker.READ" />
 
-        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2674167083358956~4290582612"/>
+            android:value="ca-app-pub-2674167083358956~3082233682"/>
 
     </application>
 
