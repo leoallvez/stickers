@@ -6,7 +6,7 @@
       "identifier": "1",
       "name": "Package 1",
       "publisher": "Singular Apps",
-      "tray_image_file": "rindo-min.png",
+      "tray_image_file": "deboche.png",
       "image_data_version": "1",
       "avoid_cache": false,
       "publisher_email": "",
@@ -14,6 +14,13 @@
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
+        {
+          "image_file": "deboche.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
         {
           "image_file": "rindo.webp",
           "emojis": [
