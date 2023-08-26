@@ -81,40 +81,48 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="450dp"
         android:layout_weight="1">
 
-        <br.com.deepbyte.overview.stickers.BottomFadingRecyclerView
+        <br.dev.singular.stickers.BottomFadingRecyclerView
             android:id="@+id/sticker_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="400dp"
             android:clipToPadding="false"
             android:fadingEdgeLength="@dimen/fading_edge_length"
             android:paddingStart="@dimen/preview_side_margin"
             android:paddingLeft="@dimen/preview_side_margin"
             android:paddingEnd="@dimen/preview_side_margin"
             android:paddingRight="@dimen/preview_side_margin"
-            android:requiresFadingEdge="vertical" />
+            android:requiresFadingEdge="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="35dp" />
 
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/sticker_details_expanded_sticker"
             android:layout_width="128dp"
             android:layout_height="128dp"
             android:scaleType="centerCrop"
-            android:visibility="invisible" />
-
-        <View
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:alpha="0.1"
-            android:background="#000000"
             android:visibility="invisible"
-            tools:visibility="visible" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/sticker_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </FrameLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="16dp"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ad_banner_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sticker_list" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -178,7 +186,5 @@
                 android:gravity="center"
                 android:text="@string/sticker_pack_details_tap_to_preview" />
         </LinearLayout>
-
-
     </FrameLayout>
 </LinearLayout>

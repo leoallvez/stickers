@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "711013213995",
+    "project_id": "figurinhas-gatos",
+    "storage_bucket": "figurinhas-gatos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711013213995:android:880fd17e52745a4b46076e",
+        "android_client_info": {
+          "package_name": "br.dev.singular.catstickers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711013213995-n8d6kf7e7ckd5m76f6nsqrp5qn6u9l2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtYVMliHP9Ga1yU4OxBxe5cqkxux7KvTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711013213995-n8d6kf7e7ckd5m76f6nsqrp5qn6u9l2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<!-- Content description for the sticker pack tray image -->
+	<string name="app_name">Cat Stickers for WhatsApp</string>
 	<string name="tray_image_content_description">Image de bac du pack de stickers</string>
 	<!-- the title of info button in the menu that takes the user to more information about that pack showing publisher website and so on -->
 	<string name="more_info_button">Plus d\'infos sur le pack de stickers</string>
