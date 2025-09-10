@@ -6,15 +6,15 @@ android {
     aaptOptions {
         noCompress "webp"
     }
-    compileSdkVersion 33
+    compileSdk 36
     defaultConfig {
         applicationId "br.dev.singular.catstickers"
         namespace 'br.dev.singular.stickers'
-        minSdkVersion 19
+        minSdkVersion 23
         targetSdkVersion 33
         multiDexEnabled true
-        versionCode 5
-        versionName "1.4"
+        versionCode 6
+        versionName "1.4.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
@@ -45,32 +45,37 @@ android {
     }
 
     signingConfigs {
+        /**
         prod {
             storeFile rootProject.file(System.getenv("CS_PROD_STORE_FILE"))
             storePassword System.getenv("CS_PROD_PASSWORD")
             keyAlias System.getenv("CS_PROD_KEY_ALIAS")
             keyPassword = System.getenv("CS_PROD_PASSWORD")
         }
+         */
     }
 
     flavorDimensions "version"
     productFlavors {
+        /**
         create("prod") {
             dimension "version"
             signingConfig signingConfigs.prod
         }
+         */
     }
+    namespace 'br.dev.singular.stickers'
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.6.0'
-    implementation platform('com.google.firebase:firebase-bom:31.5.0')
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation platform('com.google.firebase:firebase-bom:33.14.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
-    implementation 'androidx.recyclerview:recyclerview:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha07'
-    implementation 'com.google.android.gms:play-services-ads:22.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'com.google.android.gms:play-services-ads:24.3.0'
 
     def fresco_version = '2.5.0'
     implementation "com.facebook.fresco:fresco:$fresco_version"
@@ -81,6 +86,12 @@ dependencies {
     implementation "androidx.multidex:multidex:2.0.1"
 
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test:runner:1.5.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
